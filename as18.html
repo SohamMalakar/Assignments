@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>
+        Employee Registration
+    </title>
+</head>
+
+<body>
+    <form action="#">
+        Name: <input type="text" name="name"> <br />
+        E-mail Address: <input type="email" name="email"> <br />
+        Phone: <input type="tel" name="phone" pattern="[0-9]{10}"> <br />
+        Gender:
+        <input type="radio" name="gender" value="M"> Male
+        <input type="radio" name="gender" value="F"> Female
+        <input type="radio" name="gender" value="Others"> Others
+        <br />
+        Date of Birth: <input type="date" name="DOB"> <br />
+        Marital Status:
+        <select name="marital-status">
+            <option value="Single">Single</option>
+            <option value="Married">Married</option>
+        </select>
+        <br />
+        Home Address: <br />
+        <textarea name="address" cols="50" rows="10"></textarea> <br />
+
+        <input type="submit">
+    </form>
+</body>
+
+</html>
