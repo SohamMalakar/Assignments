@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admission</title>
+    <style>
+      form {
+        color: white;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body style="background-color: #002147">
+    <div
+      style="
+        font-family: Old English Text MT;
+        font-size: 4em;
+        text-align: center;
+        color: white;
+      "
+    >
+      Admission
+    </div>
+    <form action="#">
+      <table>
+        <tr>
+          <td>
+            Name in full: <input type="text" name="name" /> <br />
+            Date of Birth: <input type="date" name="DOB" /> <br />
+            Guardian Name in full: <input type="text" name="guardian_name" />
+            <br />
+            Guardian Occupation:
+            <input type="text" name="guardian_occupation" />
+            <br />
+            Marks obtained:
+            <input type="text" name="marks" pattern="[0-9]{3}" />
+            <br />
+            Gender:
+            <input type="radio" name="gender" value="M" /> Male
+            <input type="radio" name="gender" value="F" /> Female
+            <input type="radio" name="gender" value="Others" /> Others <br />
+            Religion: <input type="text" name="religion" /> <br />
+            Blood Type: <input type="text" name="blood_type" /> <br />
+            Category:
+            <input type="radio" name="category" value="Gen" /> General
+            <input type="radio" name="category" value="OBC" /> OBC
+            <input type="radio" name="category" value="SC" /> SC
+            <input type="radio" name="category" value="ST" /> ST <br />
+            PwD:
+            <input type="radio" name="pwd" value="yes" /> Yes
+            <input type="radio" name="pwd" value="no" /> No <br />
+          </td>
+        </tr>
+      </table>
+      Mother Tongue:
+      <input type="text" name="lan" /> <br />
+      E-mail Address: <input type="email" name="email" /> <br />
+      Phone: <input type="tel" name="phone" pattern="[0-9]{10}" /> <br />
+      Marital Status:
+      <select name="marital-status">
+        <option value="Unmarried">Unmarried</option>
+        <option value="Married">Married</option>
+      </select>
+      <br />
+      Nationality:
+      <input type="text" name="nationality" /> <br />
+      Home Address: <br />
+      <textarea name="address" cols="50" rows="10"></textarea> <br />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
